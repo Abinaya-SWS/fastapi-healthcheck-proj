@@ -10,6 +10,9 @@ __pycache__/
 .venv/
 venv/
 
+# Conda environment
+.conda/
+
 # Testing / coverage
 .pytest_cache/
 .coverage
@@ -20,6 +23,15 @@ htmlcov/
 
 # IDE
 .vscode/
+.idea/
 
 # OS
 .DS_Store
+
+# PostgreSQL / database local files
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log

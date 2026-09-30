@@ -1,6 +1,11 @@
 from fastapi import FastAPI
 
+from app.database.connection import Base, engine
+from app.models.user import User
 from app.routes.health import router
+
+
+Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
