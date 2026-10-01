@@ -1,25 +1,32 @@
 # Python cache
 __pycache__/
 *.py[cod]
+*$py.class
 
-# Environment files
+# Environment files / secrets
 .env
 .env.*
+!.env.example
 
 # Virtual environments
 .venv/
 venv/
+env/
 
-# Conda environment
+# Conda
 .conda/
 
 # Testing / coverage
 .pytest_cache/
 .coverage
+.coverage.*
 htmlcov/
 
-# Ruff cache
+# Ruff
 .ruff_cache/
+
+# Pre-commit
+.pre-commit/
 
 # IDE
 .vscode/
@@ -27,11 +34,12 @@ htmlcov/
 
 # OS
 .DS_Store
+Thumbs.db
 
-# PostgreSQL / database local files
-*.db
-*.sqlite
-*.sqlite3
+# Build / distribution
+build/
+dist/
+*.egg-info/
 
 # Logs
 *.log
